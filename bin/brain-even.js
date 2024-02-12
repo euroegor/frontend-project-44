@@ -24,7 +24,7 @@ const GameEven = () => {
       console.log('Correct!');
     } else {
       console.log(`'${a}' is wrong answer ;(. Correct answer was '${b}'.`);
-      return console.log("Let's try again, Bill!");
+      return console.log(`"Let's try again, ${name}!"`);
     }
     i += 1;
   }
