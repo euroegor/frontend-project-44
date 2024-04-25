@@ -22,3 +22,11 @@
 <p>https://asciinema.org/a/PLQW1vDfEXeOBTjMFIxy4nnZx</p>
 <h2>brain-prime</h2>
 <p>https://asciinema.org/a/6pVhPxsgClELgTfYRBPkTsMNc</p>
+<h3>Инструкция по установке:</h3>
+<ul type="circle">
+<li>git clone: gh repo clone euroegor/frontend-project-44</li>
+<li>cd frontend-project-44</li>
+<li>make install</li>
+<li>npm install</li>
+<li>npm link</li>
+</ul>
