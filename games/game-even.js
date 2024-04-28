@@ -1,31 +1,14 @@
-import readlineSync from 'readline-sync';
+import { getMotor, ranNum } from '../src/index.js';
 
-const GameEven = () => {
-  const maxNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`${'Hello, '}${name}${'!'}\n${'Answer "yes" if the number is even, otherwise answer "no".'}`);
-  let i = 0;
-  while (i < 3) {
-    const rndm = maxNum(1, 1000);
-    console.log(`${'Question: '}${rndm}`);
-    const name1 = readlineSync.question('Your answer: ');
-    const a = name1;
-    let b = '';
-    if (rndm % 2 === 0) {
-      b = 'yes';
-    } else {
-      b = 'no';
-    }
-    if (name1 === 'yes' && rndm % 2 === 0) {
-      console.log('Correct!');
-    } else if (name1 === 'no' && rndm % 2 !== 0) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${a}' is wrong answer ;(. Correct answer was '${b}'.`);
-      return console.log(`"Let's try again, ${name}!"`);
-    }
-    i += 1;
+const mission = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const gameGear = () => {
+  const rannum = ranNum(1, 100);
+  if (rannum % 2 === 0) {
+    return [rannum, 'yes'];
   }
-  return console.log(`${'Congratulations, '}${name}${'!'}`);
+  return [rannum, 'no'];
 };
-export default GameEven;
+export default () => {
+  getMotor(mission, gameGear);
+};
