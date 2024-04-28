@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import ? from '../games/game-even.js';
+import getMotor from '../games/game-even.js';
 
-?;
+getMotor();
