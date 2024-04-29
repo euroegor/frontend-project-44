@@ -17,6 +17,11 @@
 <h3>brain-even: https://asciinema.org/a/WHNTD8kbW6mdxbIZT7ueHc3Fb</h3>
 <h3>brain-gcd: https://asciinema.org/a/PLQW1vDfEXeOBTjMFIxy4nnZx</h3>
 <h3>brain-prime: https://asciinema.org/a/6pVhPxsgClELgTfYRBPkTsMNc</h3>
+<h3>Минимальные системные требования:</h3>
+<ul type="circle">
+<li>node.js version: '21.2.0' или новее,</li>
+<li>npm version: '10.4.0' или новее</li>
+</ul>
 <h3>Инструкция по установке:</h3>
 <ul type="circle">
 <li>git clone: gh repo clone euroegor/frontend-project-44</li>
