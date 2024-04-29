@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import GamePrime from '../games/game-prime.js';
+import getMotor from '../games/game-prime.js';
 
-GamePrime();
+getMotor();
