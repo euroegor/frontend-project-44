@@ -12,7 +12,7 @@
 <li>Определение наибольшего общего делителя.</li>
 <li>Определение простого числа.</li>
 <h3>Демонстрации игр:</h3>
-<h3>brain-calc:</h3><p>https://asciinema.org/a/Q0metRP0F9CZ6tkQ4rNeusKHJ</p>
+<h3>brain-calc: https://asciinema.org/a/Q0metRP0F9CZ6tkQ4rNeusKHJ</h3>
 <h3>brain-progression:</h3><p>https://asciinema.org/a/VFbxSw8KP9Okg93soJwzQtsSr</p>
 <h3>brain-even</h3>
 <p>https://asciinema.org/a/WHNTD8kbW6mdxbIZT7ueHc3Fb</p>
