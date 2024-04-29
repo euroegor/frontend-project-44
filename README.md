@@ -13,13 +13,10 @@
 <li>Определение простого числа.</li>
 <h3>Демонстрации игр:</h3>
 <h3>brain-calc: https://asciinema.org/a/Q0metRP0F9CZ6tkQ4rNeusKHJ</h3>
-<h3>brain-progression:</h3><p>https://asciinema.org/a/VFbxSw8KP9Okg93soJwzQtsSr</p>
-<h3>brain-even</h3>
-<p>https://asciinema.org/a/WHNTD8kbW6mdxbIZT7ueHc3Fb</p>
-<h3>brain-gcd</h3>
-<p>https://asciinema.org/a/PLQW1vDfEXeOBTjMFIxy4nnZx</p>
-<h3>brain-prime</h3>
-<p>https://asciinema.org/a/6pVhPxsgClELgTfYRBPkTsMNc</p>
+<h3>brain-progression: https://asciinema.org/a/VFbxSw8KP9Okg93soJwzQtsSr</h3>
+<h3>brain-even: https://asciinema.org/a/WHNTD8kbW6mdxbIZT7ueHc3Fb</h3>
+<h3>brain-gcd: https://asciinema.org/a/PLQW1vDfEXeOBTjMFIxy4nnZx</h3>
+<h3>brain-prime: https://asciinema.org/a/6pVhPxsgClELgTfYRBPkTsMNc</h3>
 <h3>Инструкция по установке:</h3>
 <ul type="circle">
 <li>git clone: gh repo clone euroegor/frontend-project-44</li>
