@@ -20,4 +20,4 @@ const getMotor = (mission, gameGear) => {
   return console.log(`${'Congratulations, '}${name}${'!'}`);
 };
 
-export default { ranNum, getMotor };
+export { ranNum, getMotor };
