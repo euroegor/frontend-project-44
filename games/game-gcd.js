@@ -1,10 +1,11 @@
-import getMotor from '../src/index.js';
+import { getMotor } from '../src/index.js';
 
 const mission = 'Find the greatest common divisor of given numbers.';
 
 const gameGear = () => {
   const divisor = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+
   const ranNumNew = (min, max) => {
     const number1 = Math.floor(Math.random() * (max - min + 1)) + min;
     const number2 = Math.floor(Math.random() * (max - min + 1)) + min;
