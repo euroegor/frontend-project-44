@@ -9,6 +9,7 @@ const gameGear = () => {
   }
   return [rannum, 'no'];
 };
+
 export default () => {
   getMotor(mission, gameGear);
 };
