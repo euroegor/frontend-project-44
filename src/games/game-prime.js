@@ -6,7 +6,7 @@ const mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const startGame = () => {
   const primeTest = (num) => {
     const arr = [];
-    for (let i = 1; i < num; i += 1) {
+    for (let i = 1; i < 1000; i += 1) {
       if (num % i === 0) {
         arr.push(i);
       }
