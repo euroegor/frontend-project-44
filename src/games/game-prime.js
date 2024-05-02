@@ -1,4 +1,5 @@
-import { getMotor, ranNum } from '../src/index.js';
+import runGeneralLogic from '../index.js';
+import ranNum from '../randomnum.js';
 
 const mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -24,5 +25,5 @@ const gameGear = () => {
 };
 
 export default () => {
-  getMotor(mission, gameGear);
+  runGeneralLogic(mission, gameGear);
 };

@@ -1,4 +1,4 @@
-import { getMotor } from '../src/index.js';
+import runGeneralLogic from '../index.js';
 
 const mission = 'Find the greatest common divisor of given numbers.';
 
@@ -39,5 +39,5 @@ const gameGear = () => {
 };
 
 export default () => {
-  getMotor(mission, gameGear);
+  runGeneralLogic(mission, gameGear);
 };

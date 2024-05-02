@@ -1,4 +1,5 @@
-import { getMotor, ranNum } from '../src/index.js';
+import runGeneralLogic from '../index.js';
+import ranNum from '../randomnum.js';
 
 const mission = 'What number is missing in the progression?';
 
@@ -24,5 +25,5 @@ const gameGear = () => {
 };
 
 export default () => {
-  getMotor(mission, gameGear);
+  runGeneralLogic(mission, gameGear);
 };

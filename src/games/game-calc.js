@@ -1,4 +1,5 @@
-import { getMotor, ranNum } from '../src/index.js';
+import runGeneralLogic from '../index.js';
+import ranNum from '../randomnum.js';
 
 const mission = 'What is the result of the expression?';
 
@@ -21,5 +22,5 @@ const gameGear = () => {
 };
 
 export default () => {
-  getMotor(mission, gameGear);
+  runGeneralLogic(mission, gameGear);
 };

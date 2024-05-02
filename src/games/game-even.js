@@ -1,4 +1,5 @@
-import { getMotor, ranNum } from '../src/index.js';
+import runGeneralLogic from '../index.js';
+import ranNum from '../randomnum.js';
 
 const mission = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -11,5 +12,5 @@ const gameGear = () => {
 };
 
 export default () => {
-  getMotor(mission, gameGear);
+  runGeneralLogic(mission, gameGear);
 };
