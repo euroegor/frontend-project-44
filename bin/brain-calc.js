@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getMotor from '../games/game-calc.js';
+import runGeneralLogic from '../src/games/game-calc.js';
 
-getMotor();
+runGeneralLogic();

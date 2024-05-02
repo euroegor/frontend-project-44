@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getMotor from '../games/game-progression.js';
+import runGeneralLogic from '../src/games/game-progression.js';
 
-getMotor();
+runGeneralLogic();

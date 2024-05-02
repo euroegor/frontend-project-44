@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getMotor from '../games/game-gcd.js';
+import runGeneralLogic from '../src/games/game-gcd.js';
 
-getMotor();
+runGeneralLogic();

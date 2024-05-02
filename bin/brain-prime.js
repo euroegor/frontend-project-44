@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getMotor from '../games/game-prime.js';
+import runGeneralLogic from '../src/games/game-prime.js';
 
-getMotor();
+runGeneralLogic();
