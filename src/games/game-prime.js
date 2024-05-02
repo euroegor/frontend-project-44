@@ -3,10 +3,10 @@ import ranNum from '../randomnum.js';
 
 const mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameGear = () => {
-  const PrimeTest = (num) => {
+const startGame = () => {
+  const primeTest = (num) => {
     const arr = [];
-    for (let i = 1; i < 1000; i += 1) {
+    for (let i = 1; i < num; i += 1) {
       if (num % i === 0) {
         arr.push(i);
       }
@@ -16,14 +16,15 @@ const gameGear = () => {
     }
     return false;
   };
-
-  const rndm = ranNum(1, 50);
-  if (PrimeTest(rndm)) {
+  const minrange = 1;
+  const maxrange = 50;
+  const rndm = ranNum(minrange, maxrange);
+  if (primeTest(rndm)) {
     return [rndm, 'yes'];
   }
   return [rndm, 'no'];
 };
 
 export default () => {
-  runGeneralLogic(mission, gameGear);
+  runGeneralLogic(mission, startGame);
 };

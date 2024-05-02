@@ -3,14 +3,15 @@ import ranNum from '../randomnum.js';
 
 const mission = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const gameGear = () => {
-  const rannum = ranNum(1, 100);
-  if (rannum % 2 === 0) {
-    return [rannum, 'yes'];
-  }
-  return [rannum, 'no'];
-};
+const isEven = (number) => number % 2 === 0;
 
+const startGame = () => {
+  const minrange = 1;
+  const maxrange = 100;
+  const rannum = ranNum(minrange, maxrange);
+  const answer = isEven(rannum) ? 'yes' : 'no';
+  return [rannum, answer];
+};
 export default () => {
-  runGeneralLogic(mission, gameGear);
+  runGeneralLogic(mission, startGame);
 };

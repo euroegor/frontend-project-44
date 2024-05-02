@@ -3,21 +3,24 @@ import ranNum from '../randomnum.js';
 
 const mission = 'What number is missing in the progression?';
 
-const gameGear = () => {
-  const RanProgression = () => {
-    const arr1 = [2, 3, 4, 5, 6, 7, 8, 9, 10];
-    const arr2 = [];
-    const num1 = arr1[ranNum(0, 8)];
-    for (let i = ranNum(0, 100); i < 1000; i += num1) {
-      arr2.push(i);
-      if (arr2.length === 10) {
-        break;
-      }
+const startGame = () => {
+  const ranProgression = () => {
+    const mindiff = 2;
+    const maxdiff = 10;
+    const num1 = ranNum(mindiff, maxdiff);
+    const minrange = 1;
+    const maxrange = 100;
+    const num2 = ranNum(minrange, maxrange);
+    const arr = [];
+    for (let i = num2; arr.length < maxdiff; i += num1) {
+      arr.push(i);
     }
-    return arr2;
+    return arr;
   };
-  const ran = RanProgression();
-  const num3 = ranNum(0, 9);
+  const ran = ranProgression();
+  const minrange = 0;
+  const maxrange = 9;
+  const num3 = ranNum(minrange, maxrange);
   const b = String(ran[num3]);
   ran[num3] = '..';
   const a = ran.join(' ');
@@ -25,5 +28,5 @@ const gameGear = () => {
 };
 
 export default () => {
-  runGeneralLogic(mission, gameGear);
+  runGeneralLogic(mission, startGame);
 };

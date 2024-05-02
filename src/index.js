@@ -1,23 +1,21 @@
 // общая логика для всех игр
 import readlineSync from 'readline-sync';
 
-const ranNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-const getMotor = (mission, gameGear) => {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`${'Hello, '}${name}${'!'}\n${mission}`);
+const runGeneralLogic = (mission, startGame) => {
+  const userreply1 = readlineSync.question('May I have your name? ');
+  console.log(`${'Hello, '}${userreply1}${'!'}\n${mission}`);
   for (let i = 0; i < 3; i += 1) {
-    const [question, answer] = gameGear();
+    const [question, answer] = startGame();
     console.log(`${'Question: '}${question}`);
-    const name1 = readlineSync.question('Your answer: ');
-    if (name1 === answer) {
+    const userreply2 = readlineSync.question('Your answer: ');
+    if (userreply2 === answer) {
       console.log('Correct!');
     } else {
-      console.log(`'${name1}' is wrong answer ;(. Correct answer was '${answer}'.`);
-      return console.log(`"Let's try again, ${name}!"`);
+      console.log(`'${userreply2}' is wrong answer ;(. Correct answer was '${answer}'.\n"Let's try again, ${userreply1}!"`);
+      return;
     }
   }
-  return console.log(`${'Congratulations, '}${name}${'!'}`);
+  console.log(`${'Congratulations, '}${userreply1}${'!'}`);
 };
 
-export { ranNum, getMotor };
+export default runGeneralLogic;
