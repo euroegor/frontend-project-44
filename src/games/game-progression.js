@@ -5,26 +5,26 @@ const mission = 'What number is missing in the progression?';
 
 const roundDataGeneration = () => {
   const ranProgression = () => {
-    const mindiff = 2;
-    const maxdiff = 10;
-    const num1 = ranNum(mindiff, maxdiff);
-    const minrange = 1;
-    const maxrange = 100;
-    const num2 = ranNum(minrange, maxrange);
+    const minDiff = 2;
+    const maxDiff = 10;
+    const num1 = ranNum(minDiff, maxDiff);
+    const minRange = 1;
+    const maxRange = 100;
+    const num2 = ranNum(minRange, maxRange);
     const arr = [];
-    for (let i = num2; arr.length < maxdiff; i += num1) {
+    for (let i = num2; arr.length < maxDiff; i += num1) {
       arr.push(i);
     }
     return arr;
   };
   const ran = ranProgression();
-  const minrange = 0;
-  const maxrange = 9;
-  const num3 = ranNum(minrange, maxrange);
-  const b = String(ran[num3]);
+  const minRange = 0;
+  const maxRange = 9;
+  const num3 = ranNum(minRange, maxRange);
+  const missingNumber = String(ran[num3]);
   ran[num3] = '..';
-  const a = ran.join(' ');
-  return [a, b];
+  const readyProgression = ran.join(' ');
+  return [readyProgression, missingNumber];
 };
 
 export default () => {
