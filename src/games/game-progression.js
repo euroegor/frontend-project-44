@@ -3,7 +3,7 @@ import ranNum from '../randomnum.js';
 
 const mission = 'What number is missing in the progression?';
 
-const startGame = () => {
+const roundDataGeneration = () => {
   const ranProgression = () => {
     const mindiff = 2;
     const maxdiff = 10;
@@ -28,5 +28,5 @@ const startGame = () => {
 };
 
 export default () => {
-  runGeneralLogic(mission, startGame);
+  runGeneralLogic(mission, roundDataGeneration);
 };

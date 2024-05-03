@@ -3,7 +3,7 @@ import ranNum from '../randomnum.js';
 
 const mission = 'Find the greatest common divisor of given numbers.';
 
-const startGame = () => {
+const roundDataGeneration = () => {
   const minrange = 1;
   const maxrange = 50;
   const num1 = ranNum(minrange, maxrange);
@@ -15,11 +15,11 @@ const startGame = () => {
     }
   }
   if (arr.length === 0) {
-    return startGame();
+    return roundDataGeneration();
   }
   return [`${num1} ${num2}`, String(arr[arr.length - 1])];
 };
 
 export default () => {
-  runGeneralLogic(mission, startGame);
+  runGeneralLogic(mission, roundDataGeneration);
 };

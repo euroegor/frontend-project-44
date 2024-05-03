@@ -3,19 +3,23 @@ import ranNum from '../randomnum.js';
 
 const mission = 'What is the result of the expression?';
 
-const startGame = () => {
+const roundDataGeneration = () => {
   const randomSymbol = () => {
     const arr = ['+', '-', '*'];
     const randomIndex = Math.floor(Math.random() * (arr.length - 1));
-    const result = arr[randomIndex];
-    return result;
+    return arr[randomIndex];
   };
   const calculateNum = (num1, num2, sign) => {
-    if (sign === '+') {
-      return num1 + num2;
-    } if (sign === '-') {
-      return num1 - num2;
-    } return num1 * num2;
+    switch (sign) {
+      case '+':
+        return num1 + num2;
+      case '-':
+        return num1 - num2;
+      case '*':
+        return num1 * num2;
+      default:
+        throw new Error(`Unknown order state: '${sign}'!`);
+    }
   };
   const symbol = randomSymbol();
   const minrange = 1;
@@ -31,5 +35,5 @@ const startGame = () => {
 };
 
 export default () => {
-  runGeneralLogic(mission, startGame);
+  runGeneralLogic(mission, roundDataGeneration);
 };

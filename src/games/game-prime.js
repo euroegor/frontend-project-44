@@ -3,7 +3,7 @@ import ranNum from '../randomnum.js';
 
 const mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const startGame = () => {
+const roundDataGeneration = () => {
   const primeTest = (num) => {
     const arr = [];
     for (let i = 1; i <= num; i += 1) {
@@ -26,5 +26,5 @@ const startGame = () => {
 };
 
 export default () => {
-  runGeneralLogic(mission, startGame);
+  runGeneralLogic(mission, roundDataGeneration);
 };

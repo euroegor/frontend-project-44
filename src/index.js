@@ -1,21 +1,21 @@
 // общая логика для всех игр
 import readlineSync from 'readline-sync';
 
-const runGeneralLogic = (mission, startGame) => {
-  const userreply1 = readlineSync.question('May I have your name? ');
-  console.log(`${'Hello, '}${userreply1}${'!'}\n${mission}`);
+const runGeneralLogic = (mission, roundDataGeneration) => {
+  const username = readlineSync.question('May I have your name? ');
+  console.log(`${'Hello, '}${username}${'!'}\n${mission}`);
   for (let i = 0; i < 3; i += 1) {
-    const [question, answer] = startGame();
+    const [question, answer] = roundDataGeneration();
     console.log(`${'Question: '}${question}`);
-    const userreply2 = readlineSync.question('Your answer: ');
-    if (userreply2 === answer) {
+    const useranswer = readlineSync.question('Your answer: ');
+    if (useranswer === answer) {
       console.log('Correct!');
     } else {
-      console.log(`'${userreply2}' is wrong answer ;(. Correct answer was '${answer}'.\n"Let's try again, ${userreply1}!"`);
+      console.log(`'${useranswer}' is wrong answer ;(. Correct answer was '${answer}'.\n"Let's try again, ${username}!"`);
       return;
     }
   }
-  console.log(`${'Congratulations, '}${userreply1}${'!'}`);
+  console.log(`${'Congratulations, '}${username}${'!'}`);
 };
 
 export default runGeneralLogic;
