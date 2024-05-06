@@ -3,14 +3,15 @@ import ranNum from '../randomnum.js';
 
 const mission = 'Find the greatest common divisor of given numbers.';
 
+const numberChek = (number1, number2, variable) => number1 % variable === 0
+  && number2 % variable === 0;
+
 const roundDataGeneration = () => {
   const minRange = 1;
   const maxRange = 50;
   const num1 = ranNum(minRange, maxRange);
   const num2 = ranNum(minRange, maxRange);
   const arr = [];
-  const numberChek = (number1, number2, variable) => number1 % variable === 0
-  && number2 % variable === 0;
   for (let i = 2; i <= num1 && i <= num2; i += 1) {
     if (numberChek(num1, num2, i)) {
       arr.push(i);
